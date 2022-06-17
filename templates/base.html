@@ -3,9 +3,10 @@
 <head>
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
 </head>
 <body>
-    <h1 style="color: red; font-size: 40px; ">text</h1>
+    <h1>text</h1>
     {% block content %}{% endblock %}
 </body>
 </html>
