@@ -2,7 +2,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import os
-from config import ACCESS_ID, SECRET_KEY
+from serverConfig import ACCESS_ID, SECRET_KEY
 
 def plotcord(Xcords, Ycords):
     plt.scatter(Xcords, Ycords)

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from functions import upload_spaces
-from config import flasksecretkey
+from serverConfig import flasksecretkey
 app = Flask(__name__)
 rendered = False
 app.secret_key = flasksecretkey
