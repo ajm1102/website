@@ -2,6 +2,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import os
+from config import ACCESS_ID, SECRET_KEY
 
 def plotcord(Xcords, Ycords):
     plt.scatter(Xcords, Ycords)
@@ -18,8 +19,6 @@ def upload_spaces(x, y):
 
     plt.scatter(x, y)
 
-    ACCESS_ID = 'A5U2FYOPPMN2RL24KZFB'
-    SECRET_KEY = 'oGLDIsp1rYXNZp/rsM3MTGnJPPHUdxvy/dpp9iYZURg'
 
     # Initiate session
     session = session.Session()
