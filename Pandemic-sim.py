@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import random
@@ -221,7 +222,15 @@ def create_animation(color_history, cord_history, num_people):
     animation = FuncAnimation(fig, func=animation_frame, frames=len(cord_history), interval=interval,
                               fargs=(graph_dots, num_people, cord_history, color_history), blit=True)
 
-    plt.show()
+    def upload_spaces(animation):
+
+        return
+
+
+    upload_spaces(animation)
+
+
+
 
     return
 
